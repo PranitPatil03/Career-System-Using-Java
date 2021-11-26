@@ -13,6 +13,131 @@ import java.util.Scanner;
 public class Welcome {
     public static void main(String[] args) {
 
+
+        String name;
+        int Science,Maths,Socialstudies,English,Hindi,Physics,MATHS,Chemistry,ENGLISH,Computer-1,;
+        Scanner sc =new Scanner(System.in);
+        System.out.println("_________________________________________________________________________________________________________________________________________________");
+
+        System.out.println("HELLO WELCOME TO CAREER GUIDANCE");
+        System.out.println("Please tell us your name");
+        name=sc.nextLine();
+        System.out.println("_________________________________________________________________________________________________________________________________________________");
+        System.out.println("OK \t"+name+"\tAnswer us yours acadamic Marks as asked below");
+        System.out.println();
+
+        String std ="10";
+
+        System.out.println("_________________________________________________________________________________________________________________________________________________");
+        System.out.println("Enter The Your Class__");
+
+        if(std.equalsIgnoreCase("10"))
+        {
+            System.out.println("MARKS SCORED IN SCIENCE");
+            Science=sc.nextInt();
+            System.out.println("MARKS SCORED IN MATHS");
+            Maths=sc.nextInt();
+            System.out.println("MARKS SCORED IN SOCIALSTUDIES");
+            Socialstudies=sc.nextInt();
+            System.out.println("MARKS SCORED IN ENGLISH");
+            English=sc.nextInt();
+            System.out.println("MARKS SCORED IN HINDI");
+            Hindi=sc.nextInt();
+            int R1=Science+Maths+English;
+            int R2=Socialstudies+Maths+English;
+            int R3=Hindi+Maths+English;
+
+            if (R1>=R2 && R1>=R3){
+
+                System.out.println(name+"Your Score is very good \n" +
+                        "Looking at your score we feel you have a good understanding in Science\n" +
+                        "We Suggest you to go for Science after 10th");
+
+            }else if (R2>=R1 && R2>=R3){
+
+                System.out.println(name+"Your Score is very good \n" +
+                        "Looking at your score we feel you have a good understanding in Mathematics\n" +
+                        "We Suggest you to go for Commerce after 10th");
+
+            }else {
+                System.out.println(name+"Your Score is very good \n" +
+                        "Looking at your score we feel you have a good understanding in Arts\n" +
+                        "We Suggest you to go for Arts after 10th");
+            }
+        }
+        else if  (std.equalsIgnoreCase("12"))
+    {
+            System.out.println("MARKS SCORED IN Physics");
+            Science=sc.nextInt();
+            System.out.println("MARKS SCORED IN MATHS");
+            Maths=sc.nextInt();
+            System.out.println("MARKS SCORED IN Chemistry");
+            Socialstudies=sc.nextInt();
+            System.out.println("MARKS SCORED IN ENGLISH");
+            English=sc.nextInt();
+            System.out.println("MARKS SCORED IN Computer-1");
+            Hindi=sc.nextInt();
+            System.out.println("MARKS SCORED IN Computer-2");
+            Hindi=sc.nextInt();
+            int R1=Science+Maths+English;
+            int R2=Socialstudies+Maths+English;
+            int R3=Hindi+Maths+English;
+
+            if (R1>=R2 && R1>=R3){
+
+                System.out.println(name+"Your Score is very good \n" +
+                        "Looking at your score we feel you have a good understanding in Science\n" +
+                        "We Suggest you to go for Science after 10th");
+
+            }else if (R2>=R1 && R2>=R3){
+
+                System.out.println(name+"Your Score is very good \n" +
+                        "Looking at your score we feel you have a good understanding in Mathematics\n" +
+                        "We Suggest you to go for Commerce after 10th");
+
+            }else {
+                System.out.println(name+"Your Score is very good \n" +
+                        "Looking at your score we feel you have a good understanding in Arts\n" +
+                        "We Suggest you to go for Arts after 10th");
+            }
+        }
+
+
+
+
+
+//        System.out.println("MARKS SCORED IN SCIENCE");
+//        Science=sc.nextInt();
+//        System.out.println("MARKS SCORED IN MATHS");
+//        Maths=sc.nextInt();
+//        System.out.println("MARKS SCORED IN SOCIALSTUDIES");
+//        Socialstudies=sc.nextInt();
+//        System.out.println("MARKS SCORED IN ENGLISH");
+//        English=sc.nextInt();
+//        System.out.println("MARKS SCORED IN HINDI");
+//        Hindi=sc.nextInt();
+//        int R1=Science+Maths+English;
+//        int R2=Socialstudies+Maths+English;
+//        int R3=Hindi+Maths+English;
+//
+//        if (R1>=R2 && R1>=R3){
+//
+//            System.out.println(name+"Your Score is very good \n" +
+//                    "Looking at your score we feel you have a good understanding in Science\n" +
+//                    "We Suggest you to go for Science after 10th");
+//
+//        }else if (R2>=R1 && R2>=R3){
+//
+//            System.out.println(name+"Your Score is very good \n" +
+//                    "Looking at your score we feel you have a good understanding in Mathematics\n" +
+//                    "We Suggest you to go for Commerce after 10th");
+//
+//        }else {
+//            System.out.println(name+"Your Score is very good \n" +
+//                    "Looking at your score we feel you have a good understanding in Arts\n" +
+//                    "We Suggest you to go for Arts after 10th");
+//        }
+
         welcome();
         System.out.println("_________________________________________________________________________________________________________________________________________________");
         intro();
@@ -63,46 +188,46 @@ public class Welcome {
         med.WhatisMedical();
         med.coursesinMedical();
 
-        String name;
-        int Science,Maths,Socialstudies,English,Hindi;
-        Scanner sc =new Scanner(System.in);
-        System.out.println("--------------------------------------------------");
-        System.out.println("HELLO WELCOME TO CAREER GUIDANCE");
-        System.out.println("Please tell us your name");
-        name=sc.nextLine();
-        System.out.println("---------------------------------------------------");
-        System.out.println("OK \t"+name+"\tAnswer us yours acadamic Marks as asked below");
-        System.out.println("MARKS SCORED IN SCIENCE");
-        Science=sc.nextInt();
-        System.out.println("MARKS SCORED IN MATHS");
-        Maths=sc.nextInt();
-        System.out.println("MARKS SCORED IN SOCIALSTUDIES");
-        Socialstudies=sc.nextInt();
-        System.out.println("MARKS SCORED IN ENGLISH");
-        English=sc.nextInt();
-        System.out.println("MARKS SCORED IN HINDI");
-        Hindi=sc.nextInt();
-        int R1=Science+Maths+English;
-        int R2=Socialstudies+Maths+English;
-        int R3=Hindi+Maths+English;
-        
-        if (R1>=R2 && R1>=R3){
-
-            System.out.println(name+"Your Score is very good \n" +
-                    "Looking at your score we feel you have a good understanding in Science\n" +
-                    "We Suggest you to go for Science after 10th");
-
-        }else if (R2>=R1 && R2>=R3){
-
-            System.out.println(name+"Your Score is very good \n" +
-                    "Looking at your score we feel you have a good understanding in Mathematics\n" +
-                    "We Suggest you to go for Commerce after 10th");
-
-        }else {
-            System.out.println(name+"Your Score is very good \n" +
-                    "Looking at your score we feel you have a good understanding in Arts\n" +
-                    "We Suggest you to go for Arts after 10th");
-        }
+//        String name;
+//        int Science,Maths,Socialstudies,English,Hindi;
+//        Scanner sc =new Scanner(System.in);
+//        System.out.println("--------------------------------------------------");
+//        System.out.println("HELLO WELCOME TO CAREER GUIDANCE");
+//        System.out.println("Please tell us your name");
+//        name=sc.nextLine();
+//        System.out.println("---------------------------------------------------");
+//        System.out.println("OK \t"+name+"\tAnswer us yours acadamic Marks as asked below");
+//        System.out.println("MARKS SCORED IN SCIENCE");
+//        Science=sc.nextInt();
+//        System.out.println("MARKS SCORED IN MATHS");
+//        Maths=sc.nextInt();
+//        System.out.println("MARKS SCORED IN SOCIALSTUDIES");
+//        Socialstudies=sc.nextInt();
+//        System.out.println("MARKS SCORED IN ENGLISH");
+//        English=sc.nextInt();
+//        System.out.println("MARKS SCORED IN HINDI");
+//        Hindi=sc.nextInt();
+//        int R1=Science+Maths+English;
+//        int R2=Socialstudies+Maths+English;
+//        int R3=Hindi+Maths+English;
+//
+//        if (R1>=R2 && R1>=R3){
+//
+//            System.out.println(name+"Your Score is very good \n" +
+//                    "Looking at your score we feel you have a good understanding in Science\n" +
+//                    "We Suggest you to go for Science after 10th");
+//
+//        }else if (R2>=R1 && R2>=R3){
+//
+//            System.out.println(name+"Your Score is very good \n" +
+//                    "Looking at your score we feel you have a good understanding in Mathematics\n" +
+//                    "We Suggest you to go for Commerce after 10th");
+//
+//        }else {
+//            System.out.println(name+"Your Score is very good \n" +
+//                    "Looking at your score we feel you have a good understanding in Arts\n" +
+//                    "We Suggest you to go for Arts after 10th");
+//        }
 
 
 
